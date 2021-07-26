@@ -13,3 +13,21 @@ function getEmbeddedMap(adress) {
 }
 
 getEmbeddedMap(adress);
+
+
+
+function copie() {
+    /* Get the text field */
+    var code = document.getElementById("code");
+
+    /* Select the text field */
+    code.select();
+    code.setSelectionRange(0, 99999);
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    alert('Text copied to your clip board');
+}
+
